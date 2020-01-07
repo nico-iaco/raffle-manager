@@ -2,6 +2,7 @@ package it.iacovelli.model
 
 import com.google.common.collect.ImmutableList
 import it.iacovelli.exception.TooManyNumbersIntoRowException
+import it.iacovelli.helper.RuffleHelper
 
 class RuffleFolderRow {
 
@@ -15,7 +16,17 @@ class RuffleFolderRow {
 
     fun addNumber(number: Int) {
         if (numberRow.size == 5) throw TooManyNumbersIntoRowException("Limite di numeri in questa riga raggiunto")
+        if (!RuffleHelper.validateNumberRow(number, numberRow)) throw IllegalArgumentException("Numero non permesso")
         numberRow.add(number)
     }
+
+    fun sortRow() {
+        numberRow.sort()
+    }
+
+    override fun toString(): String {
+        return "RuffleFolderRow(numberRow=$numberRow)"
+    }
+
 
 }
