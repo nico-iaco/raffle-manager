@@ -68,18 +68,9 @@
                     </execution>
                 </executions>
             </plugin>
+
         </plugins>
     </build>
-
-    <repositories>
-        <repository>
-            <id>github</id>
-            <name>GitHub nico-iaco Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/nico-iaco/raffle-manager</url>
-            <releases><enabled>true</enabled></releases>
-            <snapshots><enabled>true</enabled></snapshots>
-        </repository>
-    </repositories>
 
     <distributionManagement>
         <repository>
