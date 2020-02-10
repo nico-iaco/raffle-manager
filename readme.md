@@ -21,3 +21,6 @@ This project is a utility for ruffle applications.
 In your application instantiate a new **NumberExtractor** with the starting and the ending number of the range, then you can use the
 **getNumber()** method to extract a random number.
 Remember to call the **initialize()** after you finish to extract numbers if you want retry.
+### Use folder generator
+In your application instantiate a new **RuffleFolderGenerator** with the starting and the ending number of the range, then you can use
+the **generateRuffleFolder(folderNumber)** method with the folder number you want to use.
