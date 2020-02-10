@@ -1,14 +1,14 @@
 
-## Raffle manager
+# Raffle manager
 
 This project is a utility for ruffle applications.
 
-# Feature
+## Feature
  - Number exctractor
  - Raffle folder generator
  - more feature will be added as soon as possible
 
- # How to use
+ ## How to use
  Add this into your **pom.xml**
  ``` xml
  <dependency>
@@ -17,3 +17,7 @@ This project is a utility for ruffle applications.
     <version>1.0-SNAPSHOT</version>
 </dependency>
 ```
+### Use number extractor
+In your application instantiate a new **NumberExtractor** with the starting and the ending number of the range, then you can use the
+**getNumber()** method to extract a random number.
+Remember to call the **initialize()** after you finish to extract numbers if you want retry.
