@@ -5,10 +5,10 @@
 
     <groupId>it.iacovelli</groupId>
     <artifactId>raffleManager</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <packaging>jar</packaging>
 
-    <name>it.iacovelli raffleManager</name>
+    <name>raffleManager</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -70,6 +70,16 @@
             </plugin>
         </plugins>
     </build>
+
+    <repositories>
+        <repository>
+            <id>github</id>
+            <name>GitHub nico-iaco Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/nico-iaco/raffle-manager</url>
+            <releases><enabled>true</enabled></releases>
+            <snapshots><enabled>true</enabled></snapshots>
+        </repository>
+    </repositories>
 
     <distributionManagement>
         <repository>
