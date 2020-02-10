@@ -5,6 +5,15 @@ import it.iacovelli.model.RuffleFolderRow
 import java.lang.IllegalArgumentException
 import kotlin.random.Random
 
+/**
+ * This is the service class which provide the generation of a ruffle folder
+ * @param from the smallest number of the range
+ * @param to the biggest number of the range
+ * @throws IllegalArgumentException if from is bigger than to
+ *
+ * @author nico-iaco
+ * @since 1.0
+ */
 class RuffleFolderGenerator(from: Int, to: Int) {
 
     private val numberList: MutableList<Int> = ArrayList()
@@ -18,10 +27,14 @@ class RuffleFolderGenerator(from: Int, to: Int) {
         range = IntRange(from, to)
         initialize()
     }
-    
+
+    /**
+     * This method generates the ruffle folder
+     * @param folderNumber the id of the folder
+     * @return the ruffle folder
+     */
     fun generateRuffleFolder(folderNumber: Int) : RuffleFolder {
-        val folder = RuffleFolder()
-        folder.id = folderNumber
+        val folder = RuffleFolder(folderNumber)
         folder.firstRow = generateRuffleFolderRow()
         folder.secondRow = generateRuffleFolderRow()
         folder.thirdRow = generateRuffleFolderRow()
@@ -46,6 +59,9 @@ class RuffleFolderGenerator(from: Int, to: Int) {
         return row
     }
 
+    /**
+     * This method initializes the number list with the initial range
+     */
     fun initialize() {
         numberList.clear()
         numberList.addAll(range)

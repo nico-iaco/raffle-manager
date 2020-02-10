@@ -1,8 +1,13 @@
 package it.iacovelli.model
 
-class RuffleFolder {
-
-    var id : Int = 0
+/**
+ * This is the model of the ruffle folder
+ * @param id the number of the folder
+ *
+ * @author nico-iaco
+ * @since 1.0
+ */
+class RuffleFolder(var id: Int) {
 
     lateinit var firstRow: RuffleFolderRow
 
