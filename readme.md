@@ -1,5 +1,8 @@
 
 # Raffle manager
+[![CodeFactor](https://www.codefactor.io/repository/github/nico-iaco/raffle-manager/badge)](https://www.codefactor.io/repository/github/nico-iaco/raffle-manager)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![HitCount](http://hits.dwyl.com/nico-iaco/raffle-manager.svg)](http://hits.dwyl.com/nico-iaco/raffle-manager)
 
 This project is a utility for ruffle applications.
 
