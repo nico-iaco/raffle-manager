@@ -1,6 +1,5 @@
 package it.iacovelli.extractor
 
-import java.lang.IllegalArgumentException
 import kotlin.random.Random
 
 /**
@@ -20,7 +19,7 @@ class NumberExtractor(from: Int, to: Int) {
 
     init {
         if (to < from) {
-            throw IllegalArgumentException("Range di valori errati")
+            throw IllegalArgumentException("\"to\" must be greater than \"from\"")
         }
         range = IntRange(from, to)
         initialize()

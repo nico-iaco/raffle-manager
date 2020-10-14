@@ -22,8 +22,8 @@ class RuffleFolderRow {
     }
 
     fun addNumber(number: Int) {
-        if (numberRow.size == 5) throw TooManyNumbersIntoRowException("Limite di numeri in questa riga raggiunto")
-        if (!RuffleHelper.validateNumberRow(number, numberRow)) throw IllegalArgumentException("Numero non permesso")
+        if (numberRow.size == 5) throw TooManyNumbersIntoRowException("Reached maximum number of allowed members for this row")
+        if (!RuffleHelper.validateNumberRow(number, numberRow)) throw IllegalArgumentException("Number not allowed")
         numberRow.add(number)
     }
 

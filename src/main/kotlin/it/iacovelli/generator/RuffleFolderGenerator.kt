@@ -2,7 +2,6 @@ package it.iacovelli.generator
 
 import it.iacovelli.model.RuffleFolder
 import it.iacovelli.model.RuffleFolderRow
-import java.lang.IllegalArgumentException
 import kotlin.random.Random
 
 /**
@@ -22,7 +21,7 @@ class RuffleFolderGenerator(from: Int, to: Int) {
 
     init {
         if (to < from) {
-            throw IllegalArgumentException("Range di valori errati")
+            throw IllegalArgumentException("\"to\" must be greater than \"from\"")
         }
         range = IntRange(from, to)
         initialize()
